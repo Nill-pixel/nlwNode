@@ -2,7 +2,24 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Unite Submit",
-  "details": "Um evento para quem é apaixonado por programação",
-  "maximumAttendees": 100
+  "title": "New Event",
+  "details": null,
+  "maximumAttendees": 1
 }
+
+###
+POST http://localhost:3333/events/89124ae3-b839-49e4-9244-4db206d72da3/attendees
+Content-Type: application/json
+
+{
+ "name": "Nilvany Sunguessungue",
+ "email": "nil@gmail.com"
+}
+
+
+###
+GET http://localhost:3333/events/89124ae3-b839-49e4-9244-4db206d72da3 
+
+###
+
+GET http://localhost:3333/attendees/6/badge
