@@ -2,18 +2,18 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "New Event",
+  "title": 123,
   "details": null,
   "maximumAttendees": 1
 }
 
 ###
-POST http://localhost:3333/events/89124ae3-b839-49e4-9244-4db206d72da3/attendees
+POST http://localhost:3333/events/824345c9-4715-4e53-b77d-0cb64969ee2f/attendees
 Content-Type: application/json
 
 {
  "name": "Nilvany Sunguessungue",
- "email": "nil@gmail.com"
+ "email": "nil2@gmail.com"
 }
 
 
@@ -23,3 +23,11 @@ GET http://localhost:3333/events/89124ae3-b839-49e4-9244-4db206d72da3
 ###
 
 GET http://localhost:3333/attendees/6/badge
+
+###
+
+GET http://localhost:3333/attendees/7/check-in
+
+###
+
+GET http://localhost:3333/events/824345c9-4715-4e53-b77d-0cb64969ee2f/attendees?query=hh
